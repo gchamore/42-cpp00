@@ -6,7 +6,7 @@
 /*   By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 15:47:06 by gchamore          #+#    #+#             */
-/*   Updated: 2024/09/18 18:35:52 by gchamore         ###   ########.fr       */
+/*   Updated: 2024/09/18 18:41:32 by gchamore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ PhoneBook::~PhoneBook(void)
 	std::cout << "Destructor called" << std::endl;
 	return;
 }
-
+  
 void PhoneBook::ADD(const Contact& contact)
 {
     // Vérification de l'état actuel du PhoneBook
