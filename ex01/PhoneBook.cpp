@@ -6,7 +6,7 @@
 /*   By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 15:47:06 by gchamore          #+#    #+#             */
-/*   Updated: 2024/09/18 18:41:32 by gchamore         ###   ########.fr       */
+/*   Updated: 2024/09/18 18:41:50 by gchamore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void PhoneBook::ADD(const Contact& contact)
     // Vérification de l'état actuel du PhoneBook
     std::cout << "Current number of contacts: " << _nbContact << std::endl;
     std::cout << "Current last index: " << _lastIndex << std::endl;
+
 
     // Vérification de l'ajout dans le tableau
     if (_nbContact < 8)
