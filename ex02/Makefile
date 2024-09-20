@@ -6,11 +6,11 @@
 #    By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/18 15:24:00 by gchamore          #+#    #+#              #
-#    Updated: 2024/09/19 16:41:07 by gchamore         ###   ########.fr        #
+#    Updated: 2024/09/20 16:36:25 by gchamore         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = phonebook
+NAME = bank
 
 CC = c++
 

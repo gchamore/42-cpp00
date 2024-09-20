@@ -6,7 +6,7 @@
 /*   By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 15:47:06 by gchamore          #+#    #+#             */
-/*   Updated: 2024/09/19 16:31:00 by gchamore         ###   ########.fr       */
+/*   Updated: 2024/09/20 14:36:54 by gchamore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,14 +55,13 @@ void PhoneBook::SEARCH() const
 		std::cout << "Which index would you want to get? : " << std::flush;
 		while (true)
 		{
-			std::getline(std::cin, cmd);
-			if (std::cin.eof())
+			if (!std::getline(std::cin, cmd))
 			{
 				std::cout << "End of input detected. Exiting..." << std::endl;
 				return;
 			}
-			std::stringstream ss(cmd);
-			if (!(ss >> index))
+			std::stringstream input(cmd);
+			if (!(input >> index))
 				std::cout << "Invalid input, please enter a valid number." << std::endl;
 			else if (index < 1 || index > _nbContact)
 				std::cout << "Invalid index, please choose between 1 and " << _nbContact << "." << std::endl;
@@ -70,7 +69,7 @@ void PhoneBook::SEARCH() const
 				break;
 		}
 		const Contact& contact = _contacts[index - 1];
-		std::cout << "Contact details:" << std::endl;
+		std::cout << "Contact details =" << std::endl;
 		std::cout << "First Name: " << contact.getFirstName() << std::endl;
 		std::cout << "Last Name: " << contact.getLastName() << std::endl;
 		std::cout << "Phone Number: " << contact.getPhoneNumber() << std::endl;
