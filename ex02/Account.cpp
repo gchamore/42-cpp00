@@ -6,7 +6,7 @@
 /*   By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:35:47 by gchamore          #+#    #+#             */
-/*   Updated: 2024/09/20 17:18:31 by gchamore         ###   ########.fr       */
+/*   Updated: 2024/09/25 14:21:35 by gchamore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,7 @@ bool	Account::makeWithdrawal( int withdrawal )
 	else
 	{
 		_displayTimestamp();
-		std::cout << "index:" << _accountIndex << ";p_amount:" << _amount+withdrawal << ";withdrawal" << ":refused" << std::endl;
+		std::cout << "index:" << _accountIndex << ";p_amount:" << _amount << ";withdrawal" << ":refused" << std::endl;
 	}
 	return _amount;
 }

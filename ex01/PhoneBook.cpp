@@ -6,7 +6,7 @@
 /*   By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 15:47:06 by gchamore          #+#    #+#             */
-/*   Updated: 2024/09/20 14:36:54 by gchamore         ###   ########.fr       */
+/*   Updated: 2024/09/25 14:10:46 by gchamore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ void PhoneBook::EXIT() const
     std::cout << std::endl << "Exiting ... " << std::endl;
 }
 
-std::string formatString(const std::string &str, unsigned long width = 9)
+std::string formatString(const std::string &str, unsigned long width = 10)
 {
 	std::string new_str;
 	if (str.length() > width)
@@ -106,9 +106,9 @@ void PhoneBook::printContacts() const
 
     for (int i = 0; i < _nbContact; ++i)
 	{
-        std::cout << "│ " << std::setw(9) << std::right << i + 1 << "│ "
-                  << formatString(_contacts[i].getFirstName()) << "│ "
-                  << formatString(_contacts[i].getLastName()) << "│ "
+        std::cout << "│" << std::setw(10) << std::right << i + 1 << "│"
+                  << formatString(_contacts[i].getFirstName()) << "│"
+                  << formatString(_contacts[i].getLastName()) << "│"
                   << formatString(_contacts[i].getNickname()) << "│" << std::endl;
 		if (i + 1 != _nbContact)
         	std::cout << "├──────────┼──────────┼──────────┼──────────┤" << std::endl;
