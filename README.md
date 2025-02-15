@@ -70,9 +70,15 @@ L’objectif est de vous initier aux principes de l'OOP et d'explorer les diffé
 
 ## 🏗️ Mise en place
 
-1. **Cloner le dépôt** :
+1. **Cloner le dépôt** :  
+  ```bash
+  git clone https://github.com/ton-repo/cpp00.git
+  cd cpp00
+  ```
 
-**Exercice 00** : 
+2. **Compiler et exécuter chaque exercice** :  
+
+**Exercice 00** :  
    ```bash
    cd ex00
    make
@@ -80,7 +86,7 @@ L’objectif est de vous initier aux principes de l'OOP et d'explorer les diffé
    make fclean
    ```
 
-**Exercice 01** :
+**Exercice 01** :  
   ```bash
    cd ex01
    make
@@ -88,7 +94,7 @@ L’objectif est de vous initier aux principes de l'OOP et d'explorer les diffé
    make fclean
    ```
 
-**Exercice 02** :
+**Exercice 02** :  
    ```bash
    cd ex02
    make
