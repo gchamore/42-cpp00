@@ -70,7 +70,8 @@ L’objectif est de vous initier aux principes de l'OOP et d'explorer les diffé
 
 ## 🏗️ Mise en place
 
-1. **Cloner le dépôt** :  
+1. **Cloner le dépôt** :
+
 **Exercice 00** : 
    ```bash
    cd ex00
